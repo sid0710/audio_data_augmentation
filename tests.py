@@ -16,6 +16,6 @@ for file in os.listdir(path):
         convolve(current_file, 'smartphone_mic', 0.5)
         apply_gain(current_file, 20)
         apply_rubberband(current_file, time_stretching_ratio=0.5)
-        apply_rubberband(current_file, pitch_shifting_semitones=2.0)
+        apply_rubberband(current_file, pitch_shifting_semitones=2)
         apply_dr_compression(current_file, 2)
         apply_eq(current_file, '500;50;30')
